@@ -18,7 +18,7 @@ Build your Unity 3D projects with Gradle.
 
 ## Usage
 
-### prepend this for jitpakc fork usage
+### Prepend this for jitpack fork usage, which includes [pull-request#4](https://github.com/zasadnyy/unity-gradle-plugin/pull/4), [pull-request#4](https://github.com/zasadnyy/unity-gradle-plugin/pull/3), [pull-request#4](https://github.com/zasadnyy/unity-gradle-plugin/pull/2),
 
 ```
 buildscript {
@@ -42,6 +42,7 @@ apply plugin: 'com.zasadnyy.unity'
 
 ```
 
+### or use old version:
 
 1. `$cd [unity project root]`
 1. `$gradle init` - initialize Gradle wrapper, create settings.gradle, build.gradle

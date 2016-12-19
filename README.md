@@ -1,4 +1,4 @@
-# Unity Gradle Plugin
+# Unity Gradle Plugin [![](https://jitpack.io/v/kibotu/unity-gradle-plugin.svg)](https://jitpack.io/#kibotu/unity-gradle-plugin)
 Build your Unity 3D projects with Gradle.
 
 ## Features
@@ -17,6 +17,32 @@ Build your Unity 3D projects with Gradle.
 
 
 ## Usage
+
+### prepend this for jitpakc fork usage
+
+```
+buildscript {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'com.github.kibotu:unity-gradle-plugin:1.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+apply plugin: 'com.zasadnyy.unity'
+
+```
+
+
 1. `$cd [unity project root]`
 1. `$gradle init` - initialize Gradle wrapper, create settings.gradle, build.gradle
 1. Configure `unity.path` in `local.properties`, e.g. `unity.path=/Applications/Unity/Unity.app/Contents/MacOS`
